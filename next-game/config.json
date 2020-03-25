@@ -1,0 +1,87 @@
+﻿{
+  "boundary": {
+    "bottom": 30,
+    "left": 30,
+    "right": 30,
+    "top": 30
+  },
+  "bullet": {
+    "height": 10,
+    "cooldown": 5
+  },
+  "destroyed": {
+    "image": "img/boom.png",
+    "removalDelay": 3
+  },
+  "enemy": {
+    "appearance": {
+      "height": 50,
+      "width": 50
+    },
+    "bullet": [
+      {
+        "direction": 2,
+        "probability": 0
+      },
+      {
+        "direction": 2,
+        "probability": 0
+      },
+      {
+        "direction": 2,
+        "probability": 0.001
+      },
+      {
+        "direction": 2,
+        "probability": 0.0015
+      },
+      {
+        "direction": 3,
+        "probability": 0.002
+      },
+      {
+        "direction": 3,
+        "probability": 0.003
+      },
+      {
+        "direction": 3,
+        "probability": 0.003
+      }
+    ],
+    "countOfLines": [ 1, 2, 2, 3, 3, 3, 4 ],
+    "countPerLine": [ 7, 7, 7, 8, 8, 8, 8 ],
+    "gap": 10,
+    "image": "img/enemy.png",
+    "initialDirection": "right",
+    "proceedingDistance": 50,
+    "step": [ 2, 2, 2.5, 2.5, 3, 3, 3 ]
+  },
+  "lastLevel": 6,
+  "player": {
+    "bullet": {
+      "direction": -10
+    },
+    "keymoveleft": 37,
+    "keymoveright": 39,
+    "keyshoot": 32,
+    "step": 5,
+    "appearance": {
+      "height": 100,
+      "width": 60
+    },
+    "image": "img/plane.png",
+    "position": {
+      "left": 310,
+      "top": 470
+    }
+  },
+  "score": {
+    "font": "18px sans",
+    "style": "white",
+    "position": {
+      "left": 20,
+      "top": 38
+    }
+  },
+  "targetFramesPerSecond": 60
+}

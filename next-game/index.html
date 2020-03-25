@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <style></style>
+    <title>Shooting Game</title>
+</head>
+<body>
+    <div id="game" data-status="start">
+        <div class="game-panel">
+            <section class="game-intro game-ui">
+                <h1 class="section-title">Shooting Game</h1>
+                <p class="game-desc">This is an addicting shooting game，use ← and → to control your plane，use space to shoot </p>
+                <p class="game-level">Level: 1</p>
+                <button class="js-play button">Start</button>
+            </section>
+            <section class="game-failed game-ui">
+                <h1 class="section-title">Game Over</h1>
+                <p class="game-info-text">Final Score: <span id="score"></span></p>
+                <button class="js-replay button">Restart</button>
+            </section>
+            <section class="game-success game-ui">
+                <h1 class="section-title">Game Success!</h1>
+                <p class="game-next-level game-info-text"> Next Level: <span id="level"></span></p>
+                <button class="js-next button">Continue Game</button>
+            </section>
+            <section class="game-all-success game-ui">
+                <h1 class="section-title">Stage Clear</h1>
+                <p class="game-next-level game-info-text">You defended everything!</p>
+                <button class="js-replay button">Play Again</button>
+            </section>
+        </div>
+        <canvas id="canvas" width="700" height="600">
+        </canvas>
+    </div>
+    <script src="./dist/main.js"></script>
+</body>
+</html>
+
